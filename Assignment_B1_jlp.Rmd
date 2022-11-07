@@ -2,7 +2,7 @@
 title: "Assignment B-1: Making a function"
 author: "Jaden L. Phillips"
 date: "2022-11-01"
-output: html_document
+output: github_document
 ---
 ## Tidy Submission (15 points)
 Follow these steps to submit your work. Be sure to familiarize yourself with the rubric for a tidy submission below, before doing these steps.
