@@ -44,10 +44,8 @@ avg_cols_group <- function(.data, y, na.rm = FALSE, ...) {
 }
 
 
-
 avg_cols_group(.data = penguins, y = species, na.rm = TRUE)
 avg_cols_group(.data = continent_ghg, y = Continent, na.rm = TRUE)
-
 
 
 penguins %>% 
