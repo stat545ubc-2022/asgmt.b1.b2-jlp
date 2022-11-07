@@ -20,7 +20,7 @@
 - To **provide examples** of how our function does and/or does not work
 - Last but not least, to **test run our functions**: do they operate the way they are supposed to, do they throw informative errors to users when used incorrectly, etc.
     - Wrtie a number of formal tests for the function
-    - Using a various expect_() function from the testthat package 
+    - Using various expect_() functions from the testthat package 
 
 ### How can this code in the GitHub repository be run?
 - ANS: The code that appears in my project folder here on the GitHub repository can be run in RStudio.
