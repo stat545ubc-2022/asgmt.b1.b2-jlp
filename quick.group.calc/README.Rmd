@@ -31,34 +31,23 @@ The primary `avg_cols_group()` function of this package first identifies a group
 
 ## Installation
 
-You can install the development version of quick.group.calc from [GitHub](https://github.com/) with:
+You can install the development version of `quick.group.calc` from [GitHub](https://github.com/stat545ubc-2022/asgmt.b1.b2-jlp/tree/main/quick.group.calc) with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("stat545ubc-2022/asgmt.b1.b2-jlp")
+```{r}
+#install.packages("devtools")
+devtools::install_github("stat545ubc-2022/asgmt.b1.b2-jlp/tree/main/quick.group.calc", ref = "0.1.0", auth_token = "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")
 ```
 
-## Example
 
-This is a basic example which shows you how to solve a common problem:
+## Examples (Usage Demonstration)
+
+The following are two simple examples showing you how to use the primary **avg_cols_group( )** function of the **quick.group.calc** package:
 
 ```{r example}
 library(quick.group.calc)
+
 ## basic example code
+avg_cols_group(.data = mtcars, y = cyl)
+
+avg_cols_group(.data = palmerpenguins::penguins, y = species)
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
