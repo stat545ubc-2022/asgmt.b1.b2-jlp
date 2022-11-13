@@ -17,7 +17,7 @@
 #' avg_cols_group(.data = palmerpenguins::penguins, y = species)
 #'     # Should output a 3 x 6 tibble with one row corresponding to each penguin species,
 #'     # and each non-`species` column a numeric variable;
-#'     # numbers in the output tibble should each correspond to a specific numeric variable's average
+#'     # numbers in the output tibble should each correspond to the average of a specific numeric variable
 #'     # for a specific species (e.g., average bill_length_mm of Adelie penguins = 38.8)
 
 avg_cols_group <- function(.data, y, na_rm = TRUE) {

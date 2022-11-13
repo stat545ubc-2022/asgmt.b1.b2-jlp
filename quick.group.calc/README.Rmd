@@ -1,0 +1,64 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# quick.group.calc
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Overview 
+
+The goal of **quick.group.calc** is to simplify and make more efficient the code needed to create a group_by() %>% summarise() workflow:
+
+-   Specifically, since most data operations are done on groups defined by variables, this package can help fast track to a compact, grouped and summarized output data frame. 
+
+-   The output will have one row corresponding to each (combination of) grouping variable(s), and one column for each grouping variable as well as one column for each summary statistic specified. 
+
+The primary `avg_cols_group()` function of this package first identifies a grouping variable (interpreted as categorical), and then, inspecting across all columns of the data frame, selects all of the numeric columns and calculates the means of each of those columns for each group (i.e., level of the grouping variable, corresponding to particular rows).
+
+
+## Installation
+
+You can install the development version of quick.group.calc from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2022/asgmt.b1.b2-jlp")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(quick.group.calc)
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
