@@ -35,7 +35,7 @@ You can install the development version of `quick.group.calc` from [GitHub](http
 
 ```{r}
 #install.packages("devtools")
-devtools::install_github("stat545ubc-2022/asgmt.b1.b2-jlp/tree/main/quick.group.calc", ref = "0.1.0", auth_token = "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")
+devtools::install_github("stat545ubc-2022/asgmnt.b1.b2-jlp")
 ```
 
 

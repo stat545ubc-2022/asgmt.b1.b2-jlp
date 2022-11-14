@@ -1,0 +1,7 @@
+"0","continent_ghg <- ghg_emissions %>%"
+"0","  filter(Entity %in% c(""Africa"", ""Asia"", ""Europe"", ""North America"", ""Oceania"", ""South America"")) %>%"
+"0","  mutate(Total = rowSums(across(c(-Entity, -Code, -Year)))) %>%"
+"0","  rename(Continent = Entity) %>%"
+"0","  select(Continent, Year, Total, everything(), -Code) "
+"0",""
+"0","print(continent_ghg)"
