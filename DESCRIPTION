@@ -1,0 +1,20 @@
+Package: quick.group.calc
+Title: An R Package for Group By Summarize Calculations
+Version: 0.1.0
+Authors@R: 
+    person("Jaden", "Phillips", , "jlp1214@student.ubc.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package is quick way to access a group_by() %>% summarise() workflow. Specifically, since most data operations are done on groups defined by variables, this `quick.group.calc` package can help fast track to a compact, grouped and summarized output data frame. The output will have one row corresponding to each (combination of) grouping variable(s), and one column for each grouping variable as well as one column for each summary statistic specified. The primary `avg_cols_group()` function of this package first identifies a grouping variable (interpreted as categorical), and then, inspecting across all columns of the data frame, it selects all of the numeric columns and calculates the means of each of those columns for each group (i.e., level of the grouping variable, corresponding to particular rows).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    dplyr,
+    magrittr,
+    tidyselect,
+    palmerpenguins,
+    tibble
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
