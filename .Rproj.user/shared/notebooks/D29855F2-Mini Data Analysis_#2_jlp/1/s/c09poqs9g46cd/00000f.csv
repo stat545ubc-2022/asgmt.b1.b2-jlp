@@ -1,7 +1,0 @@
-"0","country_ghg <- ghg_emissions %>%"
-"0","      filter(!Entity %in% c(""Africa"", ""Asia"", ""Europe"", ""North America"", ""Oceania"", ""South America"", ""High-income countries"", ""Upper-middle-income countries"", ""Lower-middle-income countries"", ""Low-income countries"", ""World"")) %>%"
-"0","      rename(Country = Entity)%>%"
-"0","      mutate(Total = rowSums(across(c(-Country, -Code, -Year)))) %>%"
-"0","      select(Country, Year, Total) "
-"0",""
-"0","print(country_ghg)"

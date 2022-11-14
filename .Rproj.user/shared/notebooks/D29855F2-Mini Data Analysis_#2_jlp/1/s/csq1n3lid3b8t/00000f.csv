@@ -1,7 +1,0 @@
-"0","library(datateachr) # UBC devtools package"
-"0","library(tidyverse) # data visualization & manipulation"
-"0","library(readxl)"
-"0","library(here)"
-"0","ghg_emissions <- read_excel(here::here(""ghg_emissions.xlsx""))  "
-"2","Error: `path` does not exist: ‘/Users/jadenphillips/Desktop/STAT545/asgmt.1+2_jlp/asgmt.b1.b2-jlp/ghg_emissions.xlsx’
-"
