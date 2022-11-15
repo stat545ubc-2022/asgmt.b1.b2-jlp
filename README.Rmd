@@ -35,7 +35,6 @@ You can install the development version of `quick.group.calc` from [GitHub](http
 
 ```{r}
 #install.packages("devtools")
-library(devtools)
 devtools::install_github("stat545ubc-2022/quick.group.calc-jlp")
 ```
 
@@ -46,9 +45,24 @@ The following are two simple examples showing you how to use the primary **avg_c
 
 ```{r example}
 library(quick.group.calc)
+```
 
-## basic example code
+#### Example #1: 
+Using the *mtcars* dataset, and grouping by the variable/column *cyl* corresponding to the number of cylinders in a car :
+
+-   The output of a 3 x 11 tibble has one row corresponding to each `cyl` group (4, 6, or 8 cylinder cars)
+
+```{r}
 avg_cols_group(.data = mtcars, y = cyl)
+```
 
+
+#### Example #2: 
+Using the *penguins* data set of the palmerpenguins package, and grouping by penguin *species*:
+
+-   Output values in all but the `species` column are mean values per species for that variable
+-   E.g., the value at [1,1] indicates the average *bill_length_mm* of *Adelie* penguins is 38.8
+```{r}
 avg_cols_group(.data = palmerpenguins::penguins, y = species)
 ```
+
