@@ -6,6 +6,13 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+## Package Development
+
+This package was developed by Jaden L. Phillips in Fall 2022 as part of
+an assignment for **STAT545B** at the University of British Columbia.
+This package was created using various functions from the `devtools` and
+`usethis`packages.
+
 ## Overview
 
 The goal of **quick.group.calc** is to simplify and make more efficient
@@ -34,8 +41,16 @@ with:
 ``` r
 #install.packages("devtools")
 devtools::install_github("stat545ubc-2022/quick.group.calc-jlp")
-#> Skipping install of 'quick.group.calc' from a github remote, the SHA1 (6dd19b36) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#> Downloading GitHub repo stat545ubc-2022/quick.group.calc-jlp@HEAD
+#> 
+#> * checking for file ‘/private/var/folders/z0/p5d1pn7521d_s6vfzfj2s2j00000gn/T/Rtmp1Nk84a/remotes36ca4e14655f/stat545ubc-2022-quick.group.calc-jlp-fa0da53/DESCRIPTION’ ... OK
+#> * preparing ‘quick.group.calc’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> * building ‘quick.group.calc_0.1.0.tar.gz’
+#> Installing package into '/private/var/folders/z0/p5d1pn7521d_s6vfzfj2s2j00000gn/T/RtmpfSmQMl/temp_libpath2b2b282257c6'
+#> (as 'lib' is unspecified)
 ```
 
 ## Examples (Usage Demonstration)
@@ -52,7 +67,7 @@ library(quick.group.calc)
 Using the *mtcars* dataset, and grouping by the variable/column *cyl*
 corresponding to the number of cylinders in a car :
 
-- The output of a 3 x 11 tibble has row corresponding to each `cyl`
+- The output of a 3 x 11 tibble has one row corresponding to each `cyl`
   group (4, 6, or 8 cylinder cars)
 
 ``` r
